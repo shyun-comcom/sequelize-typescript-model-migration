@@ -1,7 +1,7 @@
 {
-  "name": "sequelize-typescript-model-migration",
-  "version": "1.0.12",
-  "description": "Migration tool for sequelize-typescript",
+  "name": "sequelize-typescript-mysql-migration",
+  "version": "1.0.0",
+  "description": "Migration tool for sequelize-typescript with MySQL",
   "keywords": [
     "sequelize",
     "typescript",
@@ -15,8 +15,8 @@
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/lngovn/sequelize-typescript-model-migration",
-  "author": "lngovn",
+  "repository": "https://github.com/shyun-comcom/sequelize-typescript-model-migration",
+  "author": "shyun",
   "license": "MIT",
   "scripts": {
     "sq:init": "sequelize-cli init",
