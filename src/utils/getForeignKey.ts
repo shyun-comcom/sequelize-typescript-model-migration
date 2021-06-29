@@ -12,7 +12,7 @@ export const getForeignKeys = (model: ModelCtor<Model>) => {
       };
       extractedKey.references.table = extractedKey.references.model;
       extractedKey.references.field = extractedKey.references.key;
-      extractedKey.name = `fk_${model.tableName}_${attr.field}_${extractedKey.references.table}`;
+      extractedKey.name = `fk_${model.tableName}_${attr.field}`;
       delete extractedKey.references.model;
       delete extractedKey.references.key;
       keys[extractedKey.name] = extractedKey;

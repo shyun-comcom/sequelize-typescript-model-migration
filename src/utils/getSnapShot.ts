@@ -11,7 +11,7 @@ export const getSequelizeMeta = async (
   sequelize.addModels([SequelizeMeta]);
   return SequelizeMeta.findAll({
     limit: 1,
-    where: { name: { [Op.iLike]: `%${filename}%` } },
+    where: { name: { [Op.like]: `%${filename}%` } },
     order: [["name", "DESC"]],
   }).then((items: SequelizeMeta[]) => items?.[0]?.get()?.name);
 };
